@@ -24,11 +24,11 @@ $ bundle install
 Usage
 -----
 
-Instead of using `extend Enumerize`, use `include EnumeratedAttribute` instead and define your enums with `attr_enum`:
+Instead of using `extend Enumerize`, use `extend EnumeratedAttribute` instead and define your enums with `attr_enum`:
 
 ```ruby
 class User
-  include EnumeratedAttribute
+  extend EnumeratedAttribute
 
   attr_enum :role
 end
