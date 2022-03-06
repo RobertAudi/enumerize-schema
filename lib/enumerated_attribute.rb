@@ -9,8 +9,6 @@ module EnumeratedAttribute
   autoload :Version, "enumerated_attribute/version"
   require_relative "./enumerated_attribute/errors"
 
-  require "enumerated_attribute/railtie" if defined?(::Rails::Railtie)
-
   # @!scope class
 
   # @!attribute [r] config
