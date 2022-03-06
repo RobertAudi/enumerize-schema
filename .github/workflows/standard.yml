@@ -24,3 +24,5 @@ jobs:
 
       - name: "Lint code"
         run: "bundle exec rake standard"
+        env:
+          STANDARDOPTS: "--color"
