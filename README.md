@@ -1,6 +1,9 @@
 EnumeratedAttribute
 ===================
 
+[![RSpec](https://github.com/RobertAudi/EnumeratedAttribute/actions/workflows/rspec.yml/badge.svg)](https://github.com/RobertAudi/EnumeratedAttribute/actions/workflows/rspec.yml)
+[![Standard](https://github.com/RobertAudi/EnumeratedAttribute/actions/workflows/standard.yml/badge.svg)](https://github.com/RobertAudi/EnumeratedAttribute/actions/workflows/standard.yml)
+
 EnumeratedAttribute is wrapper around [Enumerize](https://github.com/brainspec/enumerize) that enables storing enum values in schema files.
 
 Installation
