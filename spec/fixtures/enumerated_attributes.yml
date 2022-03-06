@@ -1,0 +1,20 @@
+---
+fake_superhero:
+  powers:
+    - lying
+    - flexing
+    - none
+
+fake_user:
+  job:
+    - president
+    - actor
+    - unknown
+
+fake_member:
+  plan:
+    - standard
+    - silver
+    - gold
+    - platinum
+    - diamond

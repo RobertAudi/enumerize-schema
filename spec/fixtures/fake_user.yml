@@ -1,0 +1,6 @@
+---
+fake_user:
+  gender:
+    - male
+    - female
+    - other

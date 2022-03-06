@@ -1,0 +1,14 @@
+---
+fake_user:
+  gender:
+    - male
+    - female
+    - other
+
+fake_member:
+  plan:
+    - standard
+    - silver
+    - gold
+    - platinum
+    - diamond
