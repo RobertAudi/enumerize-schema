@@ -1,5 +1,5 @@
 # @!group Errors
-module EnumeratedAttribute
+module EnumerizeSchema
   class SchemaFileNotFoundError < RuntimeError
     # @return [String, nil] the schema file that caused the error
     attr_reader :schema_file
@@ -37,7 +37,7 @@ module EnumeratedAttribute
       @class_name = class_name
       @attribute_name = attribute_name
 
-      super("Enumerated values missing for attribute: #{class_name}##{attribute_name}")
+      super("Enumerized values missing for attribute: #{class_name}##{attribute_name}")
     end
   end
 end

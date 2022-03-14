@@ -1,21 +1,21 @@
 # frozen_string_literal: true
 
-require_relative "lib/enumerated_attribute/version"
+require_relative "lib/enumerize_schema/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "enumerated_attribute"
-  spec.version = EnumeratedAttribute::VERSION
+  spec.name = "enumerize-schema"
+  spec.version = EnumerizeSchema::VERSION
   spec.authors = ["Robert Audi"]
   spec.email = ["robert@robertaudi.com"]
 
   spec.summary = "Store Enumerize enum values in schema files"
   spec.description = "A wrapper around Enumerize to store enum values in schema files"
-  spec.homepage = "https://github.com/RobertAudi/EnumeratedAttribute"
+  spec.homepage = "https://github.com/RobertAudi/enumerize-schema"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/RobertAudi/EnumeratedAttribute"
+  spec.metadata["source_code_uri"] = "https://github.com/RobertAudi/enumerize-schema"
   spec.metadata["changelog_uri"] = "#{spec.metadata["source_code_uri"]}/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.

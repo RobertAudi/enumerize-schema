@@ -1,10 +1,10 @@
-EnumeratedAttribute
-===================
+Enumerize: Schema
+=================
 
-[![RSpec](https://github.com/RobertAudi/EnumeratedAttribute/actions/workflows/rspec.yml/badge.svg)](https://github.com/RobertAudi/EnumeratedAttribute/actions/workflows/rspec.yml)
-[![Standard](https://github.com/RobertAudi/EnumeratedAttribute/actions/workflows/standard.yml/badge.svg)](https://github.com/RobertAudi/EnumeratedAttribute/actions/workflows/standard.yml)
+[![RSpec](https://github.com/RobertAudi/enumerize-schema/actions/workflows/rspec.yml/badge.svg)](https://github.com/RobertAudi/enumerize-schema/actions/workflows/rspec.yml)
+[![Standard](https://github.com/RobertAudi/enumerize-schema/actions/workflows/standard.yml/badge.svg)](https://github.com/RobertAudi/enumerize-schema/actions/workflows/standard.yml)
 
-EnumeratedAttribute is wrapper around [Enumerize](https://github.com/brainspec/enumerize) that enables storing enum values in schema files.
+Enumerize: Schema is wrapper around [Enumerize](https://github.com/brainspec/enumerize) that enables storing enum values in schema files.
 
 Installation
 ------------
@@ -12,7 +12,7 @@ Installation
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "enumerated_attribute"
+gem "enumerize-schema"
 ```
 
 And then execute:
@@ -24,11 +24,11 @@ $ bundle install
 Usage
 -----
 
-Instead of using `extend Enumerize`, use `extend EnumeratedAttribute` instead and define your enums with `attr_enum`:
+Instead of using `extend Enumerize`, use `extend EnumerizeSchema` instead and define your enums with `attr_enum`:
 
 ```ruby
 class User
-  extend EnumeratedAttribute
+  extend EnumerizeSchema
 
   attr_enum :role
 end
@@ -36,8 +36,8 @@ end
 
 The values of the enum need to be listed in a YAML schema file. Here are the default paths for the schema file:
 
-- `config/enumerated_attribute.yml` in Ruby on Rails applications
-- `enumerated_attribute.yml` under `Bundler.root` (if Bundler is used) or the current working directory
+- `config/enumerize.yml` in Ruby on Rails applications
+- `enumerize.yml` under `Bundler.root` (if Bundler is used) or the current working directory
 
 The structure of the schema file is similar to the one of I18n locale files:
 
@@ -64,7 +64,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 Contributing
 ------------
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/RobertAudi/enumerated_attribute.
+Bug reports and pull requests are welcome on GitHub at https://github.com/RobertAudi/enumerize-schema.
 
 License
 -------

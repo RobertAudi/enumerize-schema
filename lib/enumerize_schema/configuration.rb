@@ -2,7 +2,7 @@
 
 require "pathname"
 
-module EnumeratedAttribute
+module EnumerizeSchema
   class Configuration
     # @!attribute [r] default_config
     #
@@ -13,11 +13,11 @@ module EnumeratedAttribute
       config = {}
 
       if defined?(Rails)
-        config[:schema_file] = Rails.root.join("config", "enumerated_attributes.yml")
+        config[:schema_file] = Rails.root.join("config", "enumerize.yml")
       else
         root_path = Pathname.new(defined?(Bundler) ? Bundler.root : Dir.pwd)
 
-        config[:schema_file] = root_path.join("enumerated_attributes.yml")
+        config[:schema_file] = root_path.join("enumerize.yml")
       end
 
       @default_config = config.freeze

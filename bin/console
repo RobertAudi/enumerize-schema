@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 require "bundler/setup"
-require "enumerated_attribute"
+require "enumerize-schema"
 
 require "pry"
 Pry.start

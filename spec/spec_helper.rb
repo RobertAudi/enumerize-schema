@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "enumerated_attribute"
+require "enumerize-schema"
 
 Bundler.setup
 
