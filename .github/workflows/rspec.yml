@@ -23,4 +23,4 @@ jobs:
           bundler-cache: true   # runs 'bundle install' and caches installed gems automatically
 
       - name: "Run specs"
-        run: "bundle exec rake spec || true"
+        run: "bundle exec rake spec"

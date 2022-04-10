@@ -23,4 +23,4 @@ jobs:
         run: |
           # a changelog check is required
           # fail if the diff is empty
-          ! git diff --exit-code origin/${{ github.base_ref }} -- CHANGELOG.md || true
+          ! git diff --exit-code origin/${{ github.base_ref }} -- CHANGELOG.md
