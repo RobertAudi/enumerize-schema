@@ -9,7 +9,7 @@ class FakeSuperhero
 end
 
 RSpec.describe EnumerizeSchema do
-  describe "attr_enum :gender, default: :other" do
+  describe 'attr_enum :gender, default: :other' do
     it {
       expect(FakeSuperhero.new)
         .to enumerize(:powers)

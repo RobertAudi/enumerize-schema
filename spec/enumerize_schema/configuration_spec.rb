@@ -17,7 +17,7 @@ RSpec.describe EnumerizeSchema::Configuration do
 
   describe "[#schema_file]" do
     specify "it returns the default path to the schema file" do
-      expect(configuration.schema_file).to eq(Bundler.root.join("enumerize.yml"))
+      expect(configuration.schema_file).to eq(Bundler.root.join("enumerze.yml"))
     end
   end
 
